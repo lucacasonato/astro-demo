@@ -1,0 +1,11 @@
+on:
+  repository_dispatch:
+    - "deno_deploy.*"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print out event
+        run: echo ${{ github.event.client_payload }}
+        
