@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print out event
-        run: echo ${{ toJSON(github.event.client_payload) }}
+        run: echo '${{ toJSON(github.event.client_payload) }}'
         
