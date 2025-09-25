@@ -1,6 +1,7 @@
 on:
   repository_dispatch:
-    - "deno_deploy.*"
+    types:
+      - "deno_deploy.*"
 
 jobs:
   run:
